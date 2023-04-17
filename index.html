@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav N. Vemulapalli | TBD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="is-fullwidth">
+    <section class="section hero is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title is-1">
+                    Abhinav Vemulapalli
+                </p>
+                <p class="subtitle">
+                    <a href="#" class="link is-success hover-link-animation">Hacker</a> | <a href="#" class="link is-purple hover-link-animation">Developer</a> | <a href="#" class="link is-info hover-link-animation">Photographer</a>
+                </p>
+            </div>
+        </div>
+        <div class="hero-footer">
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-half has-text-centered">
+                    <span class="icon is-large is-centered">
+                        <a class="mdi mdi-36px mdi-chevron-down" href="#about"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section hero is-fullheight" id="about">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered is-vcentered is-mobile">
+                    <div class="column is-4 has-text-centered">
+                        <p class="title">Who am I?</p>
+                        <figure class="image is-128x128 is-justify-content-center mb-3 profile-pic" style="display: inline-block;">
+                            <img class="is-rounded" src="assets/headshot.jpg" alt="Photo of Abhinav N. Vemulapalli"
+                                style="object-fit: cover; border-color: black; border-width: 2px;">
+                        </figure>
+                        <p class="subtitle">
+                            I'm a <span id="age"></span> year old undergraduate at Georgia Institute of Technology studying
+                            Computer Engineering specializing
+                            in <a class="underline is-warning hover-link-animation" href="#">Cybersecurity</a> and <a
+                                class="underline is-danger hover-link-animation" href="#">Systems and Architecture</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script>
+    setInterval(() => {
+        var t = dayjs().diff(dayjs(1078963200000), 'year', true);
+        $('#age').text(t.toString().substring(0, 12));
+    }, 60);
+</script>
+
+</html>
