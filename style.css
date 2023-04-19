@@ -44,7 +44,7 @@ a {
 }
 
 .hover-link-animation.is-success::after {
-    background-color: darkgreen;
+    background-color: #50C878;
 }
 
 .hover-link-animation.is-warning::after {
@@ -56,7 +56,7 @@ a {
 }
 
 .hover-link-animation.is-info::after {
-    background-color: blue;
+    background-color: #4169E1;
 }
 
 .hover-link-animation.is-purple::after {
