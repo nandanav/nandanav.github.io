@@ -7,6 +7,20 @@ a {
     text-decoration: none;
 }
 
+.link {
+    color: white;
+}
+
+.bg {
+    background: #C33764;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/bg.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* The least supported option. */
+}
+
 .underline {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
