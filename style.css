@@ -11,6 +11,10 @@ a {
     color: white;
 }
 
+.link:hover {
+    color: white;
+}
+
 .bg {
     background: #C33764;
     /* fallback colour. Make sure this is just one solid colour. */
